@@ -234,8 +234,8 @@
         we were able to demonstrate their general findings. For example, we were able to show that adding more labeled
         examples helps the GAN generate images with lower error. We were also able to show that the proposed
         improvements are able to generate images that strongly resemble the training set.</p>
-    <p>It is also worth mentioning that our results for CIFAR-10 are much closer to what <a href="#ref2">[1]</a> reports that those reported for MNIST. As explained in <a
-            href="https://github.com/Sleepychord/ImprovedGAN-pytorch">Sleepychord</a>, this is probably due to replacing the last layer with a Softplus instead of a Sigmoid</p>
+    <p>It is also worth mentioning that our results for CIFAR-10 are much closer to what <a href="#ref2">[1]</a> reports that those reported for MNIST. With the architecture provided in the paper, <a
+            href="https://github.com/Sleepychord/ImprovedGAN-pytorch">Sleepychord</a> reports that the GAN suffered from exploding gradient problem, and had to replace the last layer of the generator with a Softplus instead of a Sigmoid. This, we think, explains why our results for MNIST differ noticeably in value than those reported by the paper.</p>
     <h1>References:</h1>
     <p><a name="ref1" href="https://arxiv.org/abs/1606.03498">[1] Salimans, Tim, Ian Goodfellow, Wojciech Zaremba, Vicki
             Cheung,
