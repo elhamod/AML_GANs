@@ -13,7 +13,12 @@
         matching, minibatch discrimination, historical averaging, one-side label smoothing, and virtual batch
         normalization. The paper also proposed a semi-supervised learning method, leveraging fake unlabeled data samples
         to improve results.</p>
-    <p>Training both models on CIFAR and MNIST on the two TitanX GPUs. The GPU cluster was managed under an Ubuntu 18.04 OS, with an Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz CPU and 64GB system memory. Each run took ~5mins and ~ 6hrs for MNIST and CIFAR dataset respectively, resulting total time for 2 continuous days of GPU usage.<\p> <p>The machine learning framework used in the original paper is TensorFlow, for our experiments we have used PyTorch library. Considering the time and computational constrains we conducted both the experiments for 3 times. Our results are averaged over 3 sets as compared to 10 sets in the original paper. <\p>
+    <p>Training both models on CIFAR and MNIST on the two TitanX GPUs. The GPU cluster was managed under an Ubuntu 18.04 OS,
+        with an Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz CPU and 64GB system memory. Each run took ~5mins and ~ 6hrs for MNIST 
+        and CIFAR dataset respectively, resulting total time for 2 continuous days of GPU usage.<\p> 
+    <p>The machine learning framework used in the original paper is TensorFlow, for our experiments we have used PyTorch 
+        library. Considering the time and computational constrains we conducted both the experiments for 3 times. 
+        Our results are averaged over 3 sets as compared to 10 sets in the original paper. <\p>
 
     <p>While the authors demonstrate their work by showing result from several wholistic and ablation experiments. Here,
         we choose to reproduce only some of those results from two datasets: CIFAR and MNIST.</p>
